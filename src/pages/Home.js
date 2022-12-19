@@ -5,6 +5,8 @@ import Body from "../components/ui/Body";
 import Productcatagories from "../components/ui/Productcatagories";
 import Offerproduct from "../components/ui/Offerproduct";
 import Ourproduct from "../components/ui/Ourproduct";
+import Footer from "../components/ui/Footer";
+
 
 const Home = () => {
   return (
@@ -15,6 +17,7 @@ const Home = () => {
   <Productcatagories/>
   <Offerproduct/>
   <Ourproduct/>
+  <Footer/>
   </>
 );
 };

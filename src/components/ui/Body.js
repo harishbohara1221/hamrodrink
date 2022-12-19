@@ -3,7 +3,6 @@ import Carousel from 'react-bootstrap/Carousel';
 import Serviceoption from "./Serviceoption";
 
 
-
 const Body = () => {
     
   return (
@@ -12,8 +11,8 @@ const Body = () => {
             <div className='row'>
                 <div className='col-md-4'>
                     <div className='Left'>
-                        <img className='Upperimg' src="./images/1.jpg" alt="" />
-                        <img src="./images/2.png" alt="" />
+                        <a href=' '><img className='Upperimg' src="./images/1.jpg" alt="" /></a>
+                        <a href=' '><img src="./images/2.png" alt="" /></a>
                     </div>
                 </div>
 

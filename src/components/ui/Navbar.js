@@ -6,11 +6,19 @@ const Navbar = () => {
     <div className='Nav'>
       <ul>
         <li><a href="./"> Home </a></li>
-        <li><a href="./">About Us</a></li>
-        <li><a href="./">Hard Drinks</a></li>
-        <li><a href="./">Soft Drinks</a></li>
-        <li><a href="./">Snacks</a></li>
+        <li><a href="./aboutus">About Us</a></li>
+        <li><a href="./softdrinks">Hard Drinks</a></li>
+        <li><a href="./harddrinks">Soft Drinks</a></li>
+        <li><a href="./snacks">Snacks</a></li>
       </ul>
+      <div class="Searchbar">
+        <div class="search">
+            <input type="text" class="searchTerm" placeholder="What are you looking for?"></input>
+            <button type="submit" class="searchButton">
+              <i class="fa fa-search"></i>
+            </button>
+        </div>
+      </div>
     </div>
   );
 };

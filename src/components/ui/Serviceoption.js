@@ -17,12 +17,12 @@ const serviceoption = () => {
                 </div>
                 <div className='col-md-3 section'>
                     <div className='picture'>
-                        <i class="fa-solid fa-tags"></i>
-                    </div>
-                    <div className='Texts'>
-                        <h4>Our Offers</h4>
-                        <p>Provide Offer on occasions</p>
-                    </div>
+                            <i class="fa-solid fa-tags"></i>
+                        </div>
+                        <div className='Texts'>
+                            <h4>Our Offers</h4>
+                            <p>Provide Offer on occasions</p>
+                        </div>
                 </div>
                 <div className='col-md-3 section'>
                     <div className='picture'>

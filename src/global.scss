@@ -3,6 +3,9 @@
     padding: 0px;
     font-family: 'Work Sans', sans-serif;
 }
+a{
+    text-decoration: none;
+}
 .Head{
     display: flex;
     justify-content: center;
@@ -17,13 +20,58 @@
     span{
         color:#C6102E;
     }
+    a{
+        text-decoration: none;
+        color: #000000;
+    }
 
 }
 
 .Nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 8px 0 0 0;
+    border-bottom: solid thin #f1f3f4;
+    .search {
+        width: 100%;
+        position: relative;
+        display: flex;
+      }
+      .searchTerm {
+        width: 50%;
+        border: 1px solid #EDE8E8;
+        border-right: none;
+        padding: 5px;
+        height: 30px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        color: #2e2d2d;
+        font-size: 12px;
+        }
+
+    .searchTerm:focus{
+    color: #2e2d2d;
+    padding: 0 0 0 5px;
+    }
+
+    .searchButton {
+    width: 40px;
+    height: 30px;
+    background: #eee;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    i{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    }
+    .Searchbar{
+    width: 30%;
+    height: 36px;
+    }
 
     ul{
     display: flex;
@@ -44,7 +92,7 @@
 }
 
 .Body{
-    background-color:  #F8F5EF;
+    background-image: url(../public/images/banner.png);
     padding-bottom: 30px;
     
     .Left{
@@ -58,6 +106,7 @@
         box-shadow:0 5px 3px -2px black;
         margin-bottom: 33px;
         height: 230px;
+        width:330;
         
     }  
     }
@@ -65,7 +114,10 @@
         margin: 25px 0 0 0;
         .carousel{
             box-shadow: 0 6px 5px -3px black;
-            height: 470px;
+            
+            .carousel-indicators{
+                display: none;
+            }
             .visually-hidden{
                 height: 0.5px !important;
             }
@@ -73,12 +125,14 @@
                 background-color: black;
                 opacity: 98%;
                 border-radius: 50%;
+                background-size: 15px;
                 
             }
             .carousel-control-next-icon{
                 background-color: black;
                 opacity: 98%;
                 border-radius: 50%;
+                background-size: 15px;
             }
             .carousel-caption{          
                 background: #00000061;
@@ -103,7 +157,7 @@
 .Services{
     .section{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         gap: 5px;
         .fa-solid{
             font-size: 40px;
@@ -115,13 +169,13 @@
             h4{
                 font-size: 14px;
                 font-weight: 600;
-                line-height: 16.42px;
+                
                 
             }
             p{
                 font-size: 14px;
                 font-weight: 400;
-                line-height: 16.42px;
+                
             }
         }
     }
@@ -189,6 +243,7 @@
     background-image: url(../public/images/offerbanner.jpg);
     margin-top: 6rem;
     padding: 30px 0;
+    background-size: contain;
     .Offershead{
         
         h1{
@@ -250,7 +305,7 @@
 
 
 .Ourproduct{
-    margin-top: 6rem;
+    margin-top: 2rem;
     .Ophead{
         h1{
             font-family: Work Sans;
@@ -288,41 +343,45 @@
     .cover{
         border: solid thin;
         border-color: #EDE8E8;
-        border-radius: 5px;
+        border-radius: 3px;
+        padding: 20px 20px 5px 20px;
+        object-fit: cover;
+        object-position: top;
+        
         
     }
     img{
-        width: 247.52px;
-        height: 253.54px;
+        width: 100%;
+        height: 203px;
+        border-radius: 5px;
            
     }
 
     .Offerdetail{
-        
+        margin: 15px 0 10px 0;
         h3{
             font-family: 'Work Sans';
             font-style: normal;
             font-weight: 600;
-            font-size: 18px;
-            line-height: 21px;
+            font-size: 16px;
+            line-height: 25px;
             color: #292828;
-            margin-left: 10px;
+            margin-bottom: 0;
+            
         }
         span{
             font-family: 'Work Sans';
             font-style: normal;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 21px;
+            font-weight: 800;
+            font-size: 14px;
             color: #C6102E;
-            margin-left: 10px;
         }
     }
 
 }
 
 .Tabbeer{
-    margin-top: 10px;
+
     .row{
         display: flex;
         justify-content: space-between;
@@ -330,41 +389,43 @@
     .cover{
         border: solid thin;
         border-color: #EDE8E8;
-        border-radius: 5px;
+        border-radius: 3px;
+        padding: 20px 20px 5px 20px;
+        object-fit: cover;
+        object-position: top;
         
     }
     img{
-        width: 247.52px;
-        height: 253.54px;
+        width: 100%;
+        height: 203px;
+        border-radius: 5px;
            
     }
 
     .Offerdetail{
-        
+        margin: 15px 0 10px 0;
         h3{
             font-family: 'Work Sans';
             font-style: normal;
             font-weight: 600;
-            font-size: 18px;
-            line-height: 21px;
+            font-size: 16px;
+            line-height: 25px;
             color: #292828;
-            margin-left: 10px;
+            margin-bottom: 0;
+            
         }
         span{
             font-family: 'Work Sans';
             font-style: normal;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 21px;
+            font-weight: 800;
+            font-size: 14px;
             color: #C6102E;
-            margin-left: 10px;
         }
     }
 
 }
 
 .Tabwine{
-    margin-top: 10px;
     .row{
         display: flex;
         justify-content: space-between;
@@ -372,35 +433,351 @@
     .cover{
         border: solid thin;
         border-color: #EDE8E8;
-        border-radius: 5px;
+        border-radius: 3px;
+        padding: 20px 20px 5px 20px;
+        object-fit: cover;
+        object-position: top;
         
     }
     img{
-        width: 247.52px;
-        height: 253.54px;
+        width: 100%;
+        height: 203px;
+        border-radius: 5px;
            
     }
 
     .Offerdetail{
-        
+        margin: 15px 0 10px 0;
         h3{
             font-family: 'Work Sans';
             font-style: normal;
             font-weight: 600;
-            font-size: 18px;
-            line-height: 21px;
+            font-size: 16px;
+            line-height: 25px;
             color: #292828;
-            margin-left: 10px;
+            margin-bottom: 0;
+            
         }
         span{
             font-family: 'Work Sans';
             font-style: normal;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 21px;
+            font-weight: 800;
+            font-size: 14px;
             color: #C6102E;
-            margin-left: 10px;
         }
     }
+
+}
+
+
+
+//tabs csss
+
+.bloc-tabs {
+    display: flex;
+    justify-content: space-around;    
+    padding-top: 20px;
+  }
+  .tabs {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 7px;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+    background: none;
+  }
+ 
+  
+  .active-tabs  {
+    background: white;
+    border-bottom: 1px solid transparent;
+  }
+  
+  .active-tabs::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom:0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 2px);
+    height: 2px;
+    background: #C6102E;
+    border-radius: 50px;
+  }
+  
+  
+  
+  button {
+    border: none;
+    
+  }
+  .content-tabs {
+    flex-grow : 1;
+  }
+  .content {
+    background: white;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .content h2 {
+    padding: 0px 0 5px 0px;
+  }
+  .content hr {
+    width: 100px;
+    height: 2px;
+    background: #222;
+    margin-bottom: 5px;
+  }
+  .content p {
+    width: 100%;
+    height: 100%;
+  }
+  .active-content {
+    display: block;
+  }
+
+
+
+  .Footer{
+    background: #F8F5EF;
+    margin-top: 50px;
+    .Footercontain{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+       
+        img{ 
+            width: 40%;
+            display: block;
+            margin: 0 auto;
+        }
+        span{
+            color: #C6102E;
+        }
+        a{
+            font-size: 14px;
+            font-weight: 600;
+            color: #000000;
+            text-decoration: none;
+            
+        }
+        p{
+            margin-bottom: 0;
+            font-size: 13px;
+        }
+    }
+  }
+
+  // singlepage singlepage  singlepage  singlepage  singlepage  singlepage
+  .Single{
+    //background-image: url(../public/images/banner.png);
+    //background-size: contain;
+    ul.breadcrumb {
+        padding: 10px 16px;
+        list-style: none;
+        border-bottom: solid thin #F8F5EF;
+      }
+      
+      /* Display list items side by side */
+      ul.breadcrumb li {
+        display: inline;
+        font-size: 12px;
+        font-weight: 600;
+        color: #C6102E;
+      }
+      
+      /* Add a slash symbol (/) before/behind each list item */
+      ul.breadcrumb li+li:before {
+        padding: 8px;
+        color: black;
+        content: "/\00a0";
+      }
+      
+      /* Add a color to all links inside the list */
+      ul.breadcrumb li a {
+        color:#000;
+        text-decoration: none;
+      }
+      
+      /* Add a color on mouse-over */
+      ul.breadcrumb li a:hover {
+        color: #C6102E;
+      }
+
+      .Singlecover{
+        border: solid thin #f1ede4;
+        border-radius: 5px;
+        padding: 15px;
+        img{
+            width:100%;
+        }
+        
+        }
+        .Singledetail{
+            margin-left: 20px;
+            h2{
+                font-weight: 600;
+                border-bottom: solid thin #edece991;
+                padding-bottom: 10px;
+            }
+            h4{
+                font-weight: 600;
+                font-size: 16px;
+                span{
+                    font-weight: normal;
+                    margin-left: 5px;
+                    font-size: 14px;
+                    color: #605b5b;
+                
+                }
+                p{
+                    text-align: justify;
+                    font-size: 14px;
+                    color: #605b5b;
+                }
+            }
+            h5{
+                font-weight: 600;
+                font-size: 16px;
+                border-top: solid thin #edece991;
+                border-bottom: solid thin #edece991;
+                padding: 10px 0;
+                margin-top: 25px;
+     
+            }
+      }  
+      .Singlecart h2{
+        font-weight: 600;
+        border-bottom: solid thin #edece991;
+        padding-bottom: 10px;
+    }
+    .Singlecart{
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        margin-top: 20px;
+
+        .Addcart{
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    }
+      
+  }
+
+
+.Relatedproduct{
+    display: flex;
+    flex-direction: column;
+    h2{
+        margin-left: 10px;
+        font-weight: 600;
+        border-bottom: solid thin rgba(237, 236, 233, 0.568627451);
+        padding-bottom: 5px;
+
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        margin-top: 15px;
+    }
+    .cover{
+        border: solid thin;
+        border-color: #EDE8E8;
+        border-radius: 3px;
+        padding: 20px 20px 5px 20px;
+        object-fit: cover;
+        object-position: top; 
+    }
+    img{
+        width: 100%;
+        height: 203px;
+        border-radius: 5px;
+            
+    }
+
+    .Offerdetail{
+        margin: 15px 0 10px 0;
+        h3{
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 25px;
+            color: #292828;
+            margin-bottom: 0;  
+        }
+        span{
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 14px;
+            color: #C6102E;
+        }
+    }
+
+} 
+.Aboutus{
+    h2{
+        margin-left: 10px;
+        font-weight: 600; 
+    }
+    p{
+        margin: 20px 0;
+    }
+}   
+    
+
+
+
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px)
+{   
+.Nav {display: flex; flex-direction: column; justify-content: space-between;
+    .Searchbar{.search
+        {margin-left: 4rem; font-size: 8px; width: 13rem;
+        .searchTerm{width: 100%;}
+        }}
+    ul{display: flex; flex-direction: row;  
+        li{margin-right: 15px; list-style: none;   
+            a{font-weight: 500; font-size: 10px;}  
+            }  
+        }
+    }
+.Body{
+.carousel{height: 250px;}
+.carousel-control-prev{display: none;}
+.carousel-control-next{display: none;}
+}
+.Services{margin-top: 25px;}
+.Catagories .Catagory .Catagoryitems{flex-direction: column;}
+.Catagories .Catagory .Catagoryitems .item{margin-bottom: 75px;}
+.Catagories .Catagory .Catagoryitems .item .itemback{margin:0 auto;}
+
+
+.Offerproduct .Offershead a {margin-left: 100px;}
+    .outbox{margin-top: 15px;}
+.Ourproduct{margin-top: 10px;
+    .bloc-tabs{padding: 0;} 
+    .cover{margin-bottom: 15px;}
+    .Ophead{a{margin-left: 100px;}
+            }
+            }   
+.Footer .Footercontain {
+    img{width: 75%;}
+    p{font-size: 12px;}
+    a{font-size: 10px;}
+}  
+
 
 }
