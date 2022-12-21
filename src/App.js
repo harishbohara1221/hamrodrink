@@ -6,7 +6,7 @@ import Aboutus from "./pages/Aboutus";
 import Snacks from "./pages/Snacks";
 import Harddrinks from "./pages/Harddrinks";
 import Softdrinks from "./pages/Softdrinks";
-
+import Productview from "./pages/Productview";
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
       <Route path="/snacks" element={<Snacks />} />
       <Route path="/harddrinks" element={<Harddrinks />} />
       <Route path="/softdrinks" element={<Softdrinks />} />
+      <Route path="/productview" element={<Productview />} />
       
     </Routes>
   );
