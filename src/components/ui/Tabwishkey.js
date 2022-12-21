@@ -1,4 +1,5 @@
 import React from 'react';
+import ProductCard from './ProductCard';
 
 const Tabwishkey = () => {
   return (
@@ -8,44 +9,17 @@ const Tabwishkey = () => {
 
                 <div className='row'>                
                     <div  className='col-md-3'>
-                        <div className='cover'>
-                            <img src='./images/offerimg.jpg' alt=''/>
-                            <div className='Offerdetail'>
-                                <h3>Jim Beam</h3>
-                                <span>Rs.6000</span>
-                            </div>
-                        </div>
+                        <ProductCard/>
                     </div>
-
                     <div  className='col-md-3'>
-                        <div className='cover'>
-                            <img src='./images/wishkey.jpg' alt=''/>
-                            <div className='Offerdetail'>
-                                <h3>Black Label Whiskey </h3>
-                                <span>Rs.8000</span>
-                            </div>
-                        </div>    
+                        <ProductCard/>
                     </div>
-
                     <div  className='col-md-3'>
-                        <div className='cover'>
-                            <img src='./images/wishkey.jpg' alt=''/>
-                            <div className='Offerdetail'>
-                                <h3>Jim Beam</h3>
-                                <span>Rs.10000</span>
-                            </div>
-                        </div>
+                        <ProductCard/>
                     </div>
-
                     <div  className='col-md-3'>
-                        <div className='cover'>
-                            <img src='./images/wishkey.jpg' alt=''/>
-                            <div className='Offerdetail'>
-                                <h3>Black Label Whiskey</h3>
-                                <span>Rs.15000</span>
-                            </div>
-                        </div>
-                    </div> 
+                        <ProductCard/>
+                    </div>
                 </div>
             </div>
         </div>
