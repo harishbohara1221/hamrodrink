@@ -1,26 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 const ProductSidenav = () => {
-    return(
-        <div className="SideNav">
-            <ul> 
-                <li><a href="./"> Home</a></li>
+  const [toggle, setToggle] = useState(false);
 
-                <li>
-                    <a href="./">Product</a>
-                    <ul>
-                        <li><a href="./">Add Product</a></li>
-                        <li><a href="./">View Product</a></li>
-                        <li><a href="./">Delete Product</a></li>
-                    </ul>
-                </li>
-
-                <li><a href="./"> Orders</a></li>
-                <li><a href="./"> logout</a></li>
+  const handleProduct = () => {
+    setToggle((prev) => !prev);
+  };
+  return (
+    <div className="SideNav">
+      <ul>
+        <li>Home</li>
+        <li onClick={handleProduct}>Products</li>
+        {toggle && (
+          <li>
+            <ul>
+              <li>
+                <Link href="./">Add Product</Link>
+              </li>
+              <li>
+                <Link href="./">View Product</Link>
+              </li>
+              <li>
+                <Link href="./">Delete Product</Link>
+              </li>
             </ul>
-        </div>
-    );
+          </li>
+        )}
+
+        <li>
+          <Link href="./"> Orders</Link>
+        </li>
+        <li>
+          <Link href="./"> logout</Link>
+        </li>
+      </ul>
+    </div>
+  );
 };
 
-
-  
 export default ProductSidenav;

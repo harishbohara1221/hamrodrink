@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Body from "../components/ui/Body";
 import Productcatagories from "../components/ui/Productcatagories";
 import Offerproduct from "../components/ui/Offerproduct";

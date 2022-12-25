@@ -13,21 +13,67 @@ import HomeLayout from "./components/layout/HomeLayout";
 
 function App() {
   return (
-    <HomeLayout>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/productdetail" element={<Productdetail />} />
-        <Route path="/aboutus" element={<Aboutus />} />
-        <Route path="/snacks" element={<Snacks />} />
-        <Route path="/harddrinks" element={<Harddrinks />} />
-        <Route path="/softdrinks" element={<Softdrinks />} />
-        <Route path="/productview" element={<Productview />} />
-
-        {/* Admin side routing */}
-        <Route path="/admin" element={<AdminLogin />} />
-        <Route path="/admin/addProduct" element={<AddProducts />} />
-      </Routes>
-    </HomeLayout>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <HomeLayout>
+            <Home />
+          </HomeLayout>
+        }
+      />
+      <Route
+        path="/productdetail"
+        element={
+          <HomeLayout>
+            <Productdetail />
+          </HomeLayout>
+        }
+      />
+      <Route
+        path="/aboutus"
+        element={
+          <HomeLayout>
+            <Aboutus />
+          </HomeLayout>
+        }
+      />
+      <Route
+        path="/snacks"
+        element={
+          <HomeLayout>
+            <Snacks />
+          </HomeLayout>
+        }
+      />
+      <Route
+        path="/harddrinks"
+        element={
+          <HomeLayout>
+            <Harddrinks />
+          </HomeLayout>
+        }
+      />
+      <Route
+        path="/softdrinks"
+        element={
+          <HomeLayout>
+            <Softdrinks />
+          </HomeLayout>
+        }
+      />
+      <Route
+        path="/productview"
+        element={
+          <HomeLayout>
+            <Productview />
+          </HomeLayout>
+        }
+      />
+      {/* Admin side routing */}
+      <Route path="/admin" element={<AdminLogin />} />
+      <Route path="/admin/addProduct" element={<AddProducts />} />
+    </Routes>
   );
 }
 

@@ -1,8 +1,10 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 // import api from "../../api";
 
 const Login = () => {
+  const navigate = useNavigate();
   const defaultValues = {
     username: "",
     password: "",
@@ -16,6 +18,7 @@ const Login = () => {
     console.log("dadadada", data);
     // api.post("/user/login", data);
     console.log("mailo");
+    navigate("/admin/addProduct");
     reset();
   };
 
